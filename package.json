@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/THOM-3/intro-javascript/issues"
   },
-  "homepage": "https://github.com/THOM-3/intro-javascript#readme"
+  "homepage": "https://github.com/THOM-3/intro-javascript#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
