@@ -5,23 +5,19 @@
 */
 
 let entrada = require('prompt-sync')();
+console.log('atividade estrutura de repetição');
 
-let v1 = entrada('Digite o valor inicial');
-let v2 = entrada('Digite o valor final');
+let v1 = parseInt(entrada('Digite o valor inicial '));
+let v2 = parseInt(entrada('Digite o valor final '));
 
-let valorin = parseInt(v1);
-let valorfin = parseInt(v2);
-
-if (valorin < valorfin); {
-
-    for (let i = valorin; i <= valorfin; i++) {
-        console.log(i);
-    }
-
-} else if(valorin > valorfin){
-    for (let i = valorin; i <= valorfin; i--){
-        console.log(i);
+if (v1 < v2) {
+    while (v1 <= v2 ) {
+        console.log(v1);
+        v1++;
     }
 } else {
-    console.log();
+    while (v2 <= v1) {
+        console.log(v1);
+        v1--;
+    }
 }
