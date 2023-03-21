@@ -31,12 +31,21 @@ do {
     opcao = entrada('Selecione uma opção:');
 
     if (opcao == 1) {
-        console.log('Tarefas pendentes:');
-        tarefas.forEach(function(tarefa) {
-            if (!tarefa.realizada) {
-                console.log(`${tarefa.id} - ${tarefa.tarefa}`);
+        for (const i in tarefas){
+            if (tarefas[i].realizada == false) {
+                console.log('ID: ' + tarefas[i].id);
+                console.log('TAREFA: ' + tarefas[i].tarefa);
+                console.log('REALIZADA: ' + (tarefas[i].realizada ? 'Não' : 'Sim'));
             }
-        });
+        }
+    
+    }
+        // console.log('Tarefas pendentes:');
+        // tarefas.forEach(function(tarefa) {
+        //     if (!tarefa.realizada) {
+        //         console.log(`${tarefa.id} - ${tarefa.tarefa}`);
+        //     }
+        // });
     }
 
     if (opcao == 2) {
